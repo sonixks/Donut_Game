@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+    <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\background.jpg;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="background_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\background-menu.jpg;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\bomb.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="donut1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\donut1.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="donut2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\donut2.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="donut3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\donut3.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="garbage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\garbage.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="basket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>resources\images\basket.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+
+</root>

@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationIcon>resources\images\donut1.ico</ApplicationIcon>
+        <!-- Настройки для единого EXE -->
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    </PropertyGroup>
+
+    <!-- Автоматическое включение ВСЕХ файлов из папки resources -->
+    <ItemGroup>
+        <Content Include="resources\**\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <IncludeInSingleFile>true</IncludeInSingleFile>
+        </Content>
+    </ItemGroup>
+
+    <!-- Иконка приложения (дополнительно встраиваем как EmbeddedResource) -->
+    <ItemGroup>
+        <EmbeddedResource Include="resources\images\donut1.ico" />
+        <EmbeddedResource Update="Resources.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <!-- Формы WinForms -->
+    <ItemGroup>
+        <Compile Update="views\MainMenuForm.cs">
+            <SubType>Form</SubType>
+        </Compile>
+        <Compile Update="views\GameForm.cs">
+            <SubType>Form</SubType>
+        </Compile>
+        <Compile Update="views\GameOver.cs">
+            <SubType>Form</SubType>
+        </Compile>
+        <Compile Update="Resources.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        <Compile Update="views\GameForm.Designer.cs">
+          <DependentUpon>GameForm.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+</Project>
